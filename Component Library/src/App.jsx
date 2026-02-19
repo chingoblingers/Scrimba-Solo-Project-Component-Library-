@@ -5,7 +5,7 @@ function App() {
  
 
   return (
-    <Badge> Seal of approval </Badge>
+    <Badge color="red"> Lady Gaga </Badge>
   )
 }
 

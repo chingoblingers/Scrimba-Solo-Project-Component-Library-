@@ -1,3 +1,21 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+html {
+  font-size: 62.5%;
+}
+
+.badge{
+padding: 0.2em 1.2em;
+background-color: blueviolet;  
+font-size: 1.4rem;
+line-height: 2.0rem;
+max-width: 6.7rem;
+max-height: 2.4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.pill{
+border-radius: 0.4rem;
+}
+.square{
+border-radius: 1.2rem;
 }
