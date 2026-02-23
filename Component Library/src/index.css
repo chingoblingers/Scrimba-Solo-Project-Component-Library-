@@ -21,6 +21,10 @@ border-radius: 1.2rem;
 .banner{
   border-radius: 0.6rem;
   padding: 1.6em;
+  width: 100%;
+  max-width: 89.6rem;
+  box-sizing: border-box; 
+  /* Kenton remember border box makes it so the padding doesnt blow past the max width. */
 }
 .banner-header{
   display: flex;
