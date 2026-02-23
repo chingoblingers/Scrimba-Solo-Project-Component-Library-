@@ -25,5 +25,8 @@ border-radius: 1.2rem;
 .banner-header{
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.2rem;
+}
+.banner-icon{
+  display: flex;
 }

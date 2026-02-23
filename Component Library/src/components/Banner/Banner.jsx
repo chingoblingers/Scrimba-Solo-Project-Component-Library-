@@ -33,7 +33,7 @@ const selectedIcon = statusIcon[loweredStatus] ?? statusIcon.neutral
     return(
         <div className="banner" style={selectedStatus}>
           <div className="banner-header">     
-           <span> {selectedIcon} </span> <h2 id="banner-title" style={titleColor}>{title}</h2>
+           <span className='banner-icon'> {selectedIcon} </span> <h2 style={titleColor}>{title}</h2>
          </div>
         { children ? <p> {children} </p> : null }  
         </div>
