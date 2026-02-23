@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Badge color="red" shape="bomb"> Lady Gaga </Badge>
-    <Banner title="Congratulations" status="Success"> Your verification process succeded and you are now able to make a banner component </Banner>
+    <Banner title="Too bad" status="fail"> Your verification process succeded and you are now able to make a banner component </Banner>
     </>
   )
 }

@@ -20,12 +20,20 @@ const statusIcon = {
     error : <WarningRoundIcon/>,
     neutral : <InfoOutlineIcon/>
 }
+const titleColorList= {
+    success : {color : "#065F46"},
+    warning : {color : "#92400E"},
+    error : {color : "#92400E"},
+    neutral : {color : "#1E40AF"}
+}
 const selectedStatus = statusColor[loweredStatus] ?? statusColor.neutral
+const titleColor = titleColorList[loweredStatus] ?? titleColorList.neutral
+const selectedIcon = statusIcon[loweredStatus] ?? statusIcon.neutral
 
     return(
         <div className="banner" style={selectedStatus}>
           <div className="banner-header">     
-           <span> {statusIcon[loweredStatus]} </span> <h2 id="banner-title">{title}</h2>
+           <span> {selectedIcon} </span> <h2 id="banner-title" style={titleColor}>{title}</h2>
          </div>
         { children ? <p> {children} </p> : null }  
         </div>
