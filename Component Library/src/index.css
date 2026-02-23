@@ -39,3 +39,8 @@ background-color: #EFF6FF
 .error .warning{
 color : #B45309; 
 }
+.banner-header{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
