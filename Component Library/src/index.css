@@ -17,3 +17,25 @@ border-radius: 0.4rem;
 .pill{
 border-radius: 1.2rem;
 }
+
+.banner{
+  border-radius: 0.6rem;
+  padding: 1.6em;
+}
+.success{
+color : #047857; 
+background-color: #ECFDF5
+}
+.warning{
+background-color: #FFFBEB
+}
+.error{
+background-color: #FEF2F2
+}
+.success{
+color : #1C51B9; 
+background-color: #EFF6FF
+}
+.error .warning{
+color : #B45309; 
+}
