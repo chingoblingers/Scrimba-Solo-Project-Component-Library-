@@ -5,7 +5,7 @@ function App() {
  
 
   return (
-    <Badge color="red" className="pill"> Lady Gaga </Badge>
+    <Badge color="red" shape="bomb"> Lady Gaga </Badge>
   )
 }
 

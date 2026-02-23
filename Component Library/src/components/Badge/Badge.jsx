@@ -1,5 +1,4 @@
-export default function Badge({children, color, className, ...rest}){
-const badgeClasses = className ? `badge ${className}` : "badge"
+export default function Badge({children, color, className, shape, ...rest}){
 const colorMap = {
     red : {color: "#FEE2E2", backgroundColor: "#991B1B"},
     yellow : {color: "#92400E", backgroundColor: "#FEF3C7"},
@@ -11,8 +10,13 @@ const colorMap = {
     gray : {color: "#1F2937", backgroundColor: "#F3F4F6"}  }
 
 const loweredColor = color?.toLowerCase()
-
+const loweredShape = shape?.toLowerCase()
 const selectedColor = colorMap[loweredColor] ?? colorMap.gray
+const selectedShape = loweredShape === 'pill' ? 'pill' : "square"
+const badgeClasses = className ? `badge ${selectedShape} ${className}` : `badge ${selectedShape}`
+
+
+
 
 
     return(
