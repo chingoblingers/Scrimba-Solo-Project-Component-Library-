@@ -1,5 +1,5 @@
-import InfoRoundIcon from '@rsuite/icons/InfoRound';
-import WarningRoundIcon from '@rsuite/icons/WarningRound';
+import InfoOutlineIcon from '@rsuite/icons/InfoOutline';
+import CheckRoundIcon from '@rsuite/icons/CheckRound';
 import WarningRoundIcon from '@rsuite/icons/CheckOutline';
 import RemindOutlineIcon from '@rsuite/icons/RemindOutline';
 
@@ -15,10 +15,10 @@ export default function Banner({children, title, status, ...rest}){
     neutral : {color : "#1C51B9", backGroundColor: "#EFF6FF"}
 }
 const statusIcon = {
-    success : <InfoRoundIcon/>,
-    warning : <WarningRoundIcon/>,
+    success : <CheckRoundIcon/>,
+    warning : <RemindOutlineIcon/>,
     error : <WarningRoundIcon/>,
-    neutral : <RemindOutlineIcon/>
+    neutral : <InfoOutlineIcon/>
 }
 
 const selectedStatus = statusColor[loweredStatus] ?? statusColor.neutral
@@ -26,7 +26,7 @@ const selectedStatus = statusColor[loweredStatus] ?? statusColor.neutral
     return(
         <div className="banner" style={selectedStatus} >
           <div className="banner-header">     
-           <span> <InfoRoundIcon/> </span> <h2 id="banner-title">{title}</h2>
+           <span> {statusIcon[loweredStatus]} </span> <h2 id="banner-title">{title}</h2>
          </div>
         { children ? <p> {children} </p> : null }  
         </div>
