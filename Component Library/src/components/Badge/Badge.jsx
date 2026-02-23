@@ -1,14 +1,21 @@
-export default function Badge({children, color, backgroundColor, className, style, ...rest}){
+export default function Badge({children, color, className, ...rest}){
 const badgeClasses = className ? `badge ${className}` : "badge"
-const colorDesign = {color: color.toLowerCase(), backgroundColor: backgroundColor ? backgroundColor.toLowerCase() : null}
-const styleDisplay = style ? style : colorDesign 
-if (color.toLowerCase() === "red"){
-    colorDesign.backgroundColor = "#FEE2E2"
-    colorDesign.color = "#FEE2E2"
- }
+const colorMap = {
+    red : {color: "#FEE2E2", backgroundColor: "#991B1B"},
+    yellow : {color: "#92400E", backgroundColor: "#FEF3C7"},
+    green : {color: "#065F46", backgroundColor: "#D1FAE5"},
+    blue : {color: "#1E40AF", backgroundColor: "#DBEAFE"},
+    indigo : {color: "#3730A3", backgroundColor: "#E0E7FF"},
+    purple : {color: "#5B21B6", backgroundColor: "#EDE9FE"},
+    pink : {color: "#9D174D", backgroundColor: "#FCE7F3"},
+    gray : {color: "#1F2937", backgroundColor: "#F3F4F6"}  }
+
+const loweredColor = color?.toLowerCase()
+
+const selectedColor = colorMap[loweredColor] ?? colorMap.gray
 
 
     return(
-        <div className={badgeClasses} style={styleDisplay} {...rest}> <p> {children} </p> </div>
+        <div className={badgeClasses} style={selectedColor} {...rest}> <p> {children} </p> </div>
   )  
 }

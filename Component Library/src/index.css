@@ -13,9 +13,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.pill{
+.square{
 border-radius: 0.4rem;
 }
-.square{
+.pill{
 border-radius: 1.2rem;
 }
