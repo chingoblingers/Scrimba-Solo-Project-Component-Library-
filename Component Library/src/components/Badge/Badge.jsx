@@ -16,6 +16,6 @@ const selectedColor = colorMap[loweredColor] ?? colorMap.gray
 
 
     return(
-        <div className={badgeClasses} style={selectedColor} {...rest}> <p> {children} </p> </div>
+        <div className={badgeClasses} style={selectedColor} {...rest}> <span> {children} </span> </div>
   )  
 }
