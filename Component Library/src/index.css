@@ -45,14 +45,23 @@ border-radius: 1.2rem;
   display: flex;
   position: relative;
   flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 .icon{
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.0rem;
 }
 .card:hover{
   cursor: pointer;
 }
 
 .banner, .badge, .card{
-  margin: 0.5rem 0;
+  margin: 2rem 0 0 0;
+}
+.card-title{
+ margin: 3rem 0 0 0;
 }

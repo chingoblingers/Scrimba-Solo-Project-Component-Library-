@@ -6,7 +6,7 @@ export default function Card({children, title, ...rest}){
         <div className='icon'>
             <AdvancedAnalyticsIcon/>
         </div>
-                <h2> {title} </h2>
+                <h2 className='card-title'> {title} </h2>
                 <p> {children} </p>  
     
        </div> 
