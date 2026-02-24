@@ -26,6 +26,7 @@ border-radius: 1.2rem;
   box-sizing: border-box; 
   /* Kenton remember border box makes it so the padding doesnt blow past the max width. */
 }
+
 .banner-header{
   display: flex;
   align-items: center;
@@ -33,4 +34,25 @@ border-radius: 1.2rem;
 }
 .banner-icon{
   display: flex;
+}
+
+.card{
+  width: 100%;
+  max-width: 38.4rem;
+  border-radius: 0.8rem;
+  background-color: #F9FAFB;
+  padding: 0 2.4em 3.2em 2.4em;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.icon{
+  position: absolute;
+}
+.card:hover{
+  cursor: pointer;
+}
+
+.banner, .badge, .card{
+  margin: 0.5rem 0;
 }
